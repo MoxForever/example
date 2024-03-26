@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Search example </title>
+    </head>
+    <body>
+        <h1>Поиск</h1>
+        <form action="/search" method="GET">
+            <input type="text" name="query" id="query">
+            <button type="submit">Поиск</button>
+        </form>
+        <ul>
+            {% for i in result %}
+                <li>{{ i }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
